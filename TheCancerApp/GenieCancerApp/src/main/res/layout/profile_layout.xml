@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <TableRow android:paddingTop="5px">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Patient's Name:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"/>
+
+            <TextView
+                android:id="@+id/patient_name"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="8dip"/>
+        </TableRow>
+        <TableRow android:paddingTop="5px">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="D.O.B:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"/>
+
+            <TextView
+                android:id="@+id/patient_dob"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="8dip"/>
+        </TableRow>
+
+        <TableRow android:paddingTop="5px">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Height:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"/>
+
+            <TextView
+                android:id="@+id/height"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="8dip"/>
+        </TableRow>
+
+        <TableRow android:paddingTop="5px">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Weight:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"/>
+
+            <TextView
+                android:id="@+id/weight"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="8dip"/>
+        </TableRow>
+
+        <TableRow android:paddingTop="5px">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Surface Area:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"/>
+
+            <TextView
+                android:id="@+id/surface_area"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="8dip"/>
+        </TableRow>
+
+        <TableRow android:paddingTop="5px">
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="BMI:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"/>
+
+            <TextView
+                android:id="@+id/bmi"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="8dip"/>
+        </TableRow>
+
+        <TableRow android:paddingTop="5px">
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Parent Name:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"/>
+
+            <TextView
+                android:id="@+id/patient_parent_name"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="8dip"/>
+        </TableRow>
+        <TableRow android:paddingTop="5px">
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Phone No:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"/>
+
+            <TextView
+                android:id="@+id/patient_phone"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="8dip"/>
+        </TableRow>
+        <TableRow android:paddingTop="5px">
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Email:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"/>
+
+            <TextView
+                android:id="@+id/patient_email"
+                android:textSize="20sp"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"/>
+        </TableRow>
+        <TableRow android:paddingTop="5px">
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Address:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"/>
+
+            <TextView
+                android:id="@+id/patient_address"
+                android:textSize="20sp"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

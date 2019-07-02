@@ -1,0 +1,52 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip">
+
+
+        <EditText android:id="@+id/l_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:layout_toRightOf="@+id/title_text1"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
+
+        <EditText android:id="@+id/list_item_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_marginTop="10dp"
+            android:hint="add new item to list"
+            android:textSize="18sp"
+            android:gravity="left|top" />
+
+        <Button android:id="@+id/list_confirm"
+            android:text="Add"
+            android:background="@drawable/geniebutton"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            android:scrollbars="vertical"
+            />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

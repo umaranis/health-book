@@ -1,0 +1,4 @@
+#Mon Jul 01 14:49:27 AEST 2019
+base.0=/Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/build/intermediates/transforms/dexMerger/debug/9
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Mon Jul 01 14:52:21 AEST 2019
+0.baseType=DIRECTORY
+0.base=/Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/build/intermediates/dex/debug/mergeDexDebug/out
+0.path=classes.dex
+0.set=DEX
+count=1

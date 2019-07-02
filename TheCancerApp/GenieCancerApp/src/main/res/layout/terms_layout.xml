@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="This App is developed and operated by CyberGenie Solutions. CyberGenie Solutions reserves the right to amend the Terms and Conditions at any time without notice.\n" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Parties" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="This Agreement is between you and CyberGenie Solutions only, and not Google. Notwithstanding the foregoing, you acknowledge that Google and its subsidiaries are third party beneficiaries of this Agreement and Google has the right to enforce this Agreement against you. CyberGenie Solutions, not Google, is solely responsible for the GenieCanHelp App and its content.\n" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Privacy" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="CyberGenie Solutions may collect and use information about your usage of the GenieCanHelp App, including certain types of information from and about your device. CyberGenie Solutions may use this information, as long as it is in a form that does not personally identify you, to measure the use and performance of the App.\n" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Limited License" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="CyberGenie Solutions grants you a limited, non-exclusive, non-transferable, revocable license to use the GenieCanHelp App for your personal, non-commercial purposes. You may only use the App on Android devices that you own or control and as permitted by the App Store Terms of Service.\n" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Copyright" />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="All rights are reserved. CyberGenie Solutions is the legal and moral owner of the copyright and other intellectual property subsisting in this App and the material published on this App may not be copied, distributed, downloaded, modified, printed, reposted or transmitted in any way for commercial or any other use without the written consent of CyberGenie Solutions.\n" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Disclaimer" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="@color/colorPrimary"
+            android:text="CyberGenie Solutions and its directors, officers and employees make no warranties as to accuracy, reliability, completeness or otherwise of the data and other information on the App or generated using the App. Whilst CyberGenie Solutions sincerely aims at ensuring that all information and calculations on the App are current and accurate. The App may contain some errors and inaccuracies.\n" />
+
+    </LinearLayout>
+
+</ScrollView>

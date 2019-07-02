@@ -1,0 +1,469 @@
+-- Merging decision tree log ---
+provider#android.support.v4.content.FileProvider
+INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:172:9-180:20
+	android:grantUriPermissions
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:176:13-47
+	android:authorities
+		INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:174:13-60
+	android:exported
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:175:13-37
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:173:13-67
+manifest
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:2:1-185:12
+INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:2:1-185:12
+INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:2:1-185:12
+INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:2:1-185:12
+MERGED from [com.android.support:design:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/90c0cced20ab98dc7b2358268688fc66/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/f292d258e64e7087ea38b5204b9f7b9c/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:cardview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a7b8f24a1c0413551479d5c86b9b5269/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85ac9ce5ec024cdc995e030591705394/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-analytics:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a1c80132e6996ed454355f34630b526f/AndroidManifest.xml:16:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/1f42cd513485f19718509ca9bcabf359/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/6760299cf2c58f7b433c44586d22fc44/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/9f7a854270ca78f54bb986c1d8edd5d2/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/d74a2041a3c4916e837646a512902163/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/eea6fe593ff353f6f503cfe852442cc5/AndroidManifest.xml:16:1-27:12
+MERGED from [com.google.android.gms:play-services-base:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/4cf8ed042f24a4875ef341e34d32d397/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b49ab31f8bbcdd62d2f32248fb82c892/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b51ddda316358a7fdea358032699484b/AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/e9918cf3f23725967a61e95865a1f461/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85cdca319e53d36febc94018367803b6/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/441d4d0a4e915df193a60269b1c1414b/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/ed8d74bb59aa34c5a3f6ff1b4cd6186a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a399cde4bf326f6a96839b779ac228ce/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/12d5778b92b86d186631ad18c069ac03/AndroidManifest.xml:17:1-31:12
+INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:2:1-185:12
+INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:2:1-185:12
+INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:2:1-185:12
+	package
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:3:5-66
+		INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:2:1-185:12
+		INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:2:1-185:12
+		INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CALL_PHONE
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:5:5-69
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:5:22-66
+uses-permission#com.android.alarm.permission.SET_ALARM
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:6:22-75
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:8:22-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.WRITE_INTERNAL_STORAGE
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:12:22-77
+uses-permission#android.permission.INTERNET
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:13:5-66
+MERGED from [com.google.android.gms:play-services-analytics:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a1c80132e6996ed454355f34630b526f/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a1c80132e6996ed454355f34630b526f/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/eea6fe593ff353f6f503cfe852442cc5/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/eea6fe593ff353f6f503cfe852442cc5/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:13:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:14:5-78
+MERGED from [com.google.android.gms:play-services-analytics:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a1c80132e6996ed454355f34630b526f/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a1c80132e6996ed454355f34630b526f/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/eea6fe593ff353f6f503cfe852442cc5/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/eea6fe593ff353f6f503cfe852442cc5/AndroidManifest.xml:21:5-78
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:14:22-76
+application
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:17:5-182:19
+MERGED from [com.android.support:design:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/90c0cced20ab98dc7b2358268688fc66/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/90c0cced20ab98dc7b2358268688fc66/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/f292d258e64e7087ea38b5204b9f7b9c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/f292d258e64e7087ea38b5204b9f7b9c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:cardview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a7b8f24a1c0413551479d5c86b9b5269/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a7b8f24a1c0413551479d5c86b9b5269/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85ac9ce5ec024cdc995e030591705394/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85ac9ce5ec024cdc995e030591705394/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-analytics:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a1c80132e6996ed454355f34630b526f/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-analytics:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a1c80132e6996ed454355f34630b526f/AndroidManifest.xml:26:5-19
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/1f42cd513485f19718509ca9bcabf359/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/1f42cd513485f19718509ca9bcabf359/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/6760299cf2c58f7b433c44586d22fc44/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/6760299cf2c58f7b433c44586d22fc44/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/9f7a854270ca78f54bb986c1d8edd5d2/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/9f7a854270ca78f54bb986c1d8edd5d2/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/d74a2041a3c4916e837646a512902163/AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/d74a2041a3c4916e837646a512902163/AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/eea6fe593ff353f6f503cfe852442cc5/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/eea6fe593ff353f6f503cfe852442cc5/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/4cf8ed042f24a4875ef341e34d32d397/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/4cf8ed042f24a4875ef341e34d32d397/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b49ab31f8bbcdd62d2f32248fb82c892/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b49ab31f8bbcdd62d2f32248fb82c892/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b51ddda316358a7fdea358032699484b/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b51ddda316358a7fdea358032699484b/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/e9918cf3f23725967a61e95865a1f461/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/e9918cf3f23725967a61e95865a1f461/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85cdca319e53d36febc94018367803b6/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85cdca319e53d36febc94018367803b6/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/441d4d0a4e915df193a60269b1c1414b/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/441d4d0a4e915df193a60269b1c1414b/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/ed8d74bb59aa34c5a3f6ff1b4cd6186a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/ed8d74bb59aa34c5a3f6ff1b4cd6186a/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a399cde4bf326f6a96839b779ac228ce/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a399cde4bf326f6a96839b779ac228ce/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/12d5778b92b86d186631ad18c069ac03/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/12d5778b92b86d186631ad18c069ac03/AndroidManifest.xml:25:5-29:19
+	android:supportsRtl
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:21:9-35
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:20:9-41
+	android:icon
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:19:9-43
+	android:allowBackup
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:18:9-35
+	android:theme
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:22:9-40
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.MainActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:23:9-32:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:25:13-45
+	android:theme
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:26:13-56
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:24:13-92
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:30:27-74
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.ProfileActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:33:9-36:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:35:13-59
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:34:13-95
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.ContactActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:37:9-40:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:39:13-59
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:38:13-95
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.MedicineActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:41:9-44:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:43:13-60
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:42:13-96
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.AppointmentActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:45:9-48:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:47:13-63
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:46:13-99
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.LinksActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:49:9-52:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:51:13-57
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:50:13-93
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.CalmActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:53:9-56:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:55:13-56
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:54:13-92
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.ListsActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:57:9-60:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:59:13-57
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:58:13-93
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.NotesActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:61:9-64:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:63:13-57
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:62:13-93
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.NoteEditActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:65:9-68:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:67:13-57
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:66:13-96
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.MoodActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:69:9-72:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:71:13-56
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:70:13-92
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.ProfileEditActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:73:9-76:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:75:13-59
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:74:13-99
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.ContactEditActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:77:9-80:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:79:13-59
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:78:13-99
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.AppointmentEditActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:81:9-84:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:83:13-63
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:82:13-103
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.MedicineEditActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:85:9-88:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:87:13-60
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:86:13-100
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.MoodEditActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:89:9-92:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:91:13-56
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:90:13-96
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.ListMenuActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:93:9-96:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:95:13-57
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:94:13-96
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.AboutActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:97:9-100:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:99:13-57
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:98:13-93
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.TermsAndConditionsActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:101:9-104:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:103:13-57
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:102:13-106
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.SettingsActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:105:9-108:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:107:13-60
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:106:13-96
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.OnRecieveAppointmentActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:109:9-114:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:111:13-72
+	android:theme
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:112:13-50
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:110:13-108
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.OnRecieverMedicineActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:115:9-120:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:117:13-64
+	android:theme
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:118:13-50
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:116:13-106
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.TempActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:121:9-126:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:123:13-56
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:122:13-92
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.TempEditActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:127:9-132:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:129:13-56
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:128:13-96
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.OxygenLevelActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:133:9-138:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:135:13-55
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:134:13-99
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.OxygenLevelEditActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:139:9-144:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:141:13-55
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:140:13-103
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.FluidIntakeActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:146:9-151:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:148:13-64
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:147:13-99
+activity#com.cybergeniesolutions.thecancerapp.GenieCancerApp.FluidIntakeEditActivity
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:152:9-157:20
+	android:label
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:154:13-64
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:153:13-103
+receiver#com.cybergeniesolutions.thecancerapp.GenieCancerApp.BootBroadcastReceiver
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:158:9-164:20
+	android:enabled
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:160:13-35
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:159:13-101
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:161:13-163:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:162:17-79
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:162:25-76
+receiver#com.cybergeniesolutions.thecancerapp.GenieCancerApp.AlarmReciever
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:165:9-170:20
+	android:enabled
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:165:100-122
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:165:19-99
+intent-filter#action:name:android.media.action.DISPLAY_NOTIFICATION+category:name:android.intent.category.DEFAULT
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:166:13-169:29
+action#android.media.action.DISPLAY_NOTIFICATION
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:167:17-84
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:167:25-81
+category#android.intent.category.DEFAULT
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:168:17-76
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:168:27-73
+uses-sdk
+INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/90c0cced20ab98dc7b2358268688fc66/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/90c0cced20ab98dc7b2358268688fc66/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/f292d258e64e7087ea38b5204b9f7b9c/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/f292d258e64e7087ea38b5204b9f7b9c/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:cardview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a7b8f24a1c0413551479d5c86b9b5269/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a7b8f24a1c0413551479d5c86b9b5269/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85ac9ce5ec024cdc995e030591705394/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85ac9ce5ec024cdc995e030591705394/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-analytics:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a1c80132e6996ed454355f34630b526f/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a1c80132e6996ed454355f34630b526f/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/1f42cd513485f19718509ca9bcabf359/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/1f42cd513485f19718509ca9bcabf359/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/6760299cf2c58f7b433c44586d22fc44/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/6760299cf2c58f7b433c44586d22fc44/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/9f7a854270ca78f54bb986c1d8edd5d2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/9f7a854270ca78f54bb986c1d8edd5d2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/d74a2041a3c4916e837646a512902163/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/d74a2041a3c4916e837646a512902163/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/eea6fe593ff353f6f503cfe852442cc5/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/eea6fe593ff353f6f503cfe852442cc5/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/4cf8ed042f24a4875ef341e34d32d397/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/4cf8ed042f24a4875ef341e34d32d397/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b49ab31f8bbcdd62d2f32248fb82c892/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b49ab31f8bbcdd62d2f32248fb82c892/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b51ddda316358a7fdea358032699484b/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b51ddda316358a7fdea358032699484b/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/e9918cf3f23725967a61e95865a1f461/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/e9918cf3f23725967a61e95865a1f461/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85cdca319e53d36febc94018367803b6/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85cdca319e53d36febc94018367803b6/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/441d4d0a4e915df193a60269b1c1414b/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/441d4d0a4e915df193a60269b1c1414b/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/ed8d74bb59aa34c5a3f6ff1b4cd6186a/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/ed8d74bb59aa34c5a3f6ff1b4cd6186a/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a399cde4bf326f6a96839b779ac228ce/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a399cde4bf326f6a96839b779ac228ce/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/12d5778b92b86d186631ad18c069ac03/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/12d5778b92b86d186631ad18c069ac03/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/90c0cced20ab98dc7b2358268688fc66/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:177:13-179:57
+	android:resource
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:179:17-55
+	android:name
+		ADDED from /Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/src/main/AndroidManifest.xml:178:17-67
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/90c0cced20ab98dc7b2358268688fc66/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/f292d258e64e7087ea38b5204b9f7b9c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/f292d258e64e7087ea38b5204b9f7b9c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:cardview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a7b8f24a1c0413551479d5c86b9b5269/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a7b8f24a1c0413551479d5c86b9b5269/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85ac9ce5ec024cdc995e030591705394/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85ac9ce5ec024cdc995e030591705394/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/1f42cd513485f19718509ca9bcabf359/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/1f42cd513485f19718509ca9bcabf359/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/6760299cf2c58f7b433c44586d22fc44/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/6760299cf2c58f7b433c44586d22fc44/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/9f7a854270ca78f54bb986c1d8edd5d2/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/9f7a854270ca78f54bb986c1d8edd5d2/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/e9918cf3f23725967a61e95865a1f461/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/e9918cf3f23725967a61e95865a1f461/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85cdca319e53d36febc94018367803b6/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/85cdca319e53d36febc94018367803b6/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/441d4d0a4e915df193a60269b1c1414b/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/441d4d0a4e915df193a60269b1c1414b/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/ed8d74bb59aa34c5a3f6ff1b4cd6186a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/ed8d74bb59aa34c5a3f6ff1b4cd6186a/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a399cde4bf326f6a96839b779ac228ce/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a399cde4bf326f6a96839b779ac228ce/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/12d5778b92b86d186631ad18c069ac03/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/12d5778b92b86d186631ad18c069ac03/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/90c0cced20ab98dc7b2358268688fc66/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.0.2] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/90c0cced20ab98dc7b2358268688fc66/AndroidManifest.xml:27:13-51
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-analytics:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a1c80132e6996ed454355f34630b526f/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/eea6fe593ff353f6f503cfe852442cc5/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/eea6fe593ff353f6f503cfe852442cc5/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/a1c80132e6996ed454355f34630b526f/AndroidManifest.xml:24:22-65
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/4cf8ed042f24a4875ef341e34d32d397/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/4cf8ed042f24a4875ef341e34d32d397/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/4cf8ed042f24a4875ef341e34d32d397/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/4cf8ed042f24a4875ef341e34d32d397/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b51ddda316358a7fdea358032699484b/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b51ddda316358a7fdea358032699484b/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.2.4] /Users/sadafk/.gradle/caches/transforms-2/files-2.1/b51ddda316358a7fdea358032699484b/AndroidManifest.xml:20:20-65

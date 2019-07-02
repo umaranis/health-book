@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10dip">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <TableRow android:paddingTop="5px">
+
+                <Button android:id="@+id/fluid_day_edit"
+                    android:text="Day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button android:id="@+id/fluid_date_edit"
+                    android:text="Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10px"
+            android:paddingTop="30px">
+            <TableRow android:paddingTop="5px">
+                <TextView
+                    android:text="Fluid Intake: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText android:id="@+id/fluid_intake"
+                    android:text="0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="200px"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView android:id="@+id/fluid_intake_unit"
+                    android:text="ml"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingTop="30px">
+            <TableRow>
+            <EditText android:id="@+id/fluid_edit"
+                android:textColorHint="@color/colorLightGrey"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal|numberSigned" />
+            <Button android:id="@+id/fluid_intake_add"
+                android:text="Add"
+                android:background="@drawable/geniebutton"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Quick Add: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </TableRow>
+            <TableRow>
+               <Button android:id="@+id/fluid_intake_cup"
+                    android:layout_marginRight="5dp"
+                    android:text="Cup(250 ml)"
+                    android:background="@drawable/geniebutton"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button android:id="@+id/fluid_intake_bottle"
+                    android:layout_marginRight="5dp"
+                    android:text="Bottle(500ml)"
+                    android:background="@drawable/geniebutton"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button android:id="@+id/fluid_intake_lrg_bottle"
+                    android:layout_marginRight="5dp"
+                    android:text="Lrg Bottle(750 ml)"
+                    android:background="@drawable/geniebutton"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30px">
+            <TableRow>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Unit: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </TableRow>
+            <RadioGroup
+                android:id="@+id/radioFluid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioMl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_ml"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioCup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_cup" />
+
+            </RadioGroup>
+        </TableLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:drawable/ic_menu_save"
+            app:backgroundTint="@color/colorPrimary"
+            android:tint="@android:color/white"
+            app:layout_anchor="@id/radioFluid"
+            app:layout_anchorGravity="bottom|right|end" />
+
+    </LinearLayout>
+</ScrollView>
+
