@@ -12,7 +12,7 @@ GenieCanHelp is a free and non-profitable app designed to support and empower pa
 
 ## General info
 You can download this app from [@GenieCanHelp](http://geniecanhelpapp.com/) website. 
-This folder contains the source code of GenieCanHelp Android Mobile application. If you want to contribute to this app visit [@Contribution Guide](https://github.com/CyberGenieSolutions/GenieCancerHelpIOSApp/blob/master/CONTRIBUTING.md). 
+This folder contains the source code of GenieCanHelp Android Mobile application. If you want to contribute to this app visit [@Contribution Guide](https://github.com/CyberGenieSolutions/GenieCancerHelpAndroidApp/blob/master/CODE_OF_CONDUCT.md). 
 
 ## Screenshots
 ![Example screenshot](./docs/screenshot_main.png)
