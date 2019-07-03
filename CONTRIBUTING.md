@@ -24,7 +24,7 @@ Thinking about contributing in GenieCanHelp app!! We welcome you to our communit
 
 •	Put as many helpful comments you can in the code.
 
-•	Ensure that you follow colour and font guide provided in section 4.2 of [@Functional Specification document](https://github.com/CyberGenieSolutions/GenieCancerHelpIOSApp/tree/master/docs/). 
+•	Ensure that you follow colour and font guide provided in section 4.2 of [@Functional Specification document](https://github.com/CyberGenieSolutions/GenieCancerHelpAndroidApp/blob/master/docs/GenieCanHelp_Functional_Specification.pdf). 
 
 •	If you have made any change in database schema, ensure that you update database schema version in setConfiguration function of RealmHelper.class.
  
