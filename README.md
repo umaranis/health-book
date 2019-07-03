@@ -24,7 +24,7 @@ This folder contains the source code of GenieCanHelp Android Mobile application.
 Clone or Download GenieCanHelp source code and developers need to open this project in Android Studio.
 
 ## Features
-List of existing features. You can find details of every feature [@Functional Specification document](https://github.com/CyberGenieSolutions/GenieCancerHelpIOSApp/tree/master/docs/)
+List of existing features. You can find details of every feature [@Functional Specification document](https://github.com/CyberGenieSolutions/GenieCancerHelpAndroidApp/blob/master/docs/GenieCanHelp_Functional_Specification.pdf)
 * keep personal information
 * Add or remove features from the main menu
 * keep contacts
