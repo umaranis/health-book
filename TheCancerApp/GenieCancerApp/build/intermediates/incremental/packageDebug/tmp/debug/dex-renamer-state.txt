@@ -1,4 +1,4 @@
-#Mon Jul 01 14:52:19 AEST 2019
-base.0=/Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/build/intermediates/dex/debug/mergeDexDebug/out
+#Sat Jul 20 10:54:07 AEST 2019
+base.0=/Users/sadafk/Documents/Hackathon/Hackathon_Android_Version/TheCancerApp/GenieCancerApp/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex

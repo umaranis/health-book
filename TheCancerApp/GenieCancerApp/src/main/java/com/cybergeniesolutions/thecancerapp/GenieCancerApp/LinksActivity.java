@@ -5,27 +5,16 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
-
-
 /**
  * Created by sadafk on 13/01/2017.
  */
 public class LinksActivity extends AppCompatActivity {
 
-    private static Tracker mTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.links_layout);
-
-        // Obtain the shared Tracker instance.
-        MainActivity application = new MainActivity();
-        mTracker = application.getDefaultTracker();
-        mTracker.setScreenName(getResources().getString(R.string.title_activity_links));
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 
         //Action bar
         getSupportActionBar().setHomeButtonEnabled(true);

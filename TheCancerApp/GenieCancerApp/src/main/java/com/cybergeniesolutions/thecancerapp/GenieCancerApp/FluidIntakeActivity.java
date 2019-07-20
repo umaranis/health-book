@@ -11,9 +11,6 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -33,7 +30,6 @@ public class FluidIntakeActivity extends AppCompatActivity {
 
     private DataBaseHelper db;
     private static final int ACTIVITY_CREATE=0;
-    private static Tracker mTracker;
     private static final String DATE_FORMAT = "dd-MM-yyyy";
     private Calendar cal;
 
@@ -42,11 +38,6 @@ public class FluidIntakeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_empty);
 
-        // Obtain the shared Tracker instance.
-        MainActivity application = new MainActivity();
-        mTracker = application.getDefaultTracker();
-        mTracker.setScreenName(getResources().getString(R.string.title_activity_fluid_intake));
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 
         lLayout = new GridLayoutManager(FluidIntakeActivity.this, 1);
 

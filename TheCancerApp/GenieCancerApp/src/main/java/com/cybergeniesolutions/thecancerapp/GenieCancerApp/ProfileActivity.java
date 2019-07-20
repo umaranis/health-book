@@ -15,7 +15,6 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
 
 
 public class ProfileActivity extends AppCompatActivity {
@@ -24,7 +23,6 @@ public class ProfileActivity extends AppCompatActivity {
     private static final int ACTIVITY_CREATE=0;
 
     private DataBaseHelper db;
-    private static Tracker mTracker;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -32,11 +30,6 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.profile_layout);
         Log.v(TAG, "in onCreate()");
 
-        // Obtain the shared Tracker instance.
-        MainActivity application = new MainActivity();
-        mTracker = application.getDefaultTracker();
-        mTracker.setScreenName(getResources().getString(R.string.title_activity_profile));
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 
         //Action bar
         getSupportActionBar().setHomeButtonEnabled(true);

@@ -15,26 +15,63 @@
         <LinearLayout android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content">
-
-            <TextView android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Medicine:" />
-            <EditText android:id="@+id/med_name_edit"
-                android:hint="hint:Panadol"
-                android:textColorHint="@color/colorLightGrey"
+            <TableLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Medicine:" />
+                        </TableRow>
+                        <TableRow>
+                        <EditText android:id="@+id/med_name_edit"
+                            android:hint="hint:Panadol"
+                            android:textColorHint="@color/colorLightGrey"
+                            android:layout_width="wrap_content"
+                            android:maxLength="12"
+                            android:layout_height="wrap_content" />
+                        </TableRow>
+                        <TableRow>
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit:" />
+                        </TableRow>
+                        <TableRow>
+                        <EditText android:id="@+id/med_unit_edit"
+                            android:hint="hint:50mg"
+                            android:textColorHint="@color/colorLightGrey"
+                            android:layout_width="wrap_content"
+                            android:maxLength="12"
+                            android:layout_height="wrap_content" />
+                        </TableRow>
+                    </TableLayout>
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TableRow>
+                        <ImageView
+                            android:id="@+id/med_image_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/medicines"
+                            />
+                        </TableRow>
+                            <Button android:id="@+id/med_image_upload"
+                                android:text="Add Image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        <TableRow>
 
-            <TextView android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Unit:" />
-            <EditText android:id="@+id/med_unit_edit"
-                android:hint="hint:50mg"
-                android:textColorHint="@color/colorLightGrey"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:scrollbars="vertical"
-                android:gravity="top" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
 
             <TextView android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

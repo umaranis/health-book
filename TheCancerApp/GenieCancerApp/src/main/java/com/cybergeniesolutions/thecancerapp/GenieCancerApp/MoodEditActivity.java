@@ -16,8 +16,6 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
-import com.google.android.gms.analytics.Tracker;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -45,8 +43,6 @@ public class MoodEditActivity extends AppCompatActivity {
     private static final int TIME_DIALOG_ID = 1;
     private Calendar cal;
     private static final String DATE_FORMAT = "dd-MM-yyyy";
-
-    private static Tracker mTracker;
 
 
     public void onCreate(Bundle savedInstanceState) {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GenieCanHelp</string>
+    <string name="app_name">Health Book</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -72,8 +72,6 @@
     <string name="radio_ml">ml</string>
     <string name="radio_oz">oz</string>
     <string name="radio_cup">cup</string>
-
-    <string name="cybergeniesolutions_web"><a href="http://www.cybergeniesolutions.com">http://www.cybergeniesolutions.com</a></string>
 
 
     <string name="useful_link1_text">Download your ‘Cooking for Chemo’ recipe book here</string>

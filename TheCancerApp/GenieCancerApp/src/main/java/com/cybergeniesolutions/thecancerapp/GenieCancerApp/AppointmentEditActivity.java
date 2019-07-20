@@ -8,10 +8,16 @@ import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.media.MediaPlayer;
+import android.media.MediaRecorder;
 import android.net.ParseException;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -23,11 +29,13 @@ import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import com.google.android.gms.analytics.Tracker;
-
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+
+import static android.Manifest.permission.RECORD_AUDIO;
+import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 /**
  * Created by sadafk on 30/01/2017.
@@ -38,6 +46,8 @@ public class AppointmentEditActivity extends AppCompatActivity {
     private EditText whereText;
     private Button whenButton;
     private Button whenTimeButton;
+    private Button recordButton;
+    private Button stopButton;
     private Long rowId;
     private DataBaseHelper dbHelper;
     private static final String TAG = "AppointmentEditActivity";
@@ -48,7 +58,10 @@ public class AppointmentEditActivity extends AppCompatActivity {
     private static final String DATE_FORMAT = "dd-MM-yyyy";
     private String reminderSetting;
     private Context context;
-    private static Tracker mTracker;
+
+    String AudioSavePathInDevice = null;
+    MediaRecorder mediaRecorder ;
+    public static final int RequestPermissionCode = 1;
 
 
     @Override
@@ -62,6 +75,11 @@ public class AppointmentEditActivity extends AppCompatActivity {
         whereText = (EditText) findViewById(R.id.app_where_edit);
         whenButton = (Button) findViewById(R.id.app_when_edit);
         whenTimeButton = (Button) findViewById(R.id.app_when_time_edit);
+        recordButton = (Button) findViewById(R.id.app_record_edit);
+        stopButton = (Button) findViewById(R.id.app_stop_edit);
+        recordButton.setText("Record");
+        stopButton.setText("Stop");
+        stopButton.setEnabled(false);
 
         Bundle extras = getIntent().getExtras();
         rowId = extras.getLong(DataBaseHelper.KEY_ROWID);
@@ -184,7 +202,110 @@ public class AppointmentEditActivity extends AppCompatActivity {
             }
         });
 
+        recordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(checkPermission()) {
+
+                    AudioSavePathInDevice = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + "App" + "AudioRecording.3gp";
+
+                    MediaRecorderReady();
+
+                    try {
+                        mediaRecorder.prepare();
+                        mediaRecorder.start();
+                    } catch (IllegalStateException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+
+                    recordButton.setEnabled(false);
+                    stopButton.setEnabled(true);
+
+                    //Toast.makeText(MainActivity.this, "Recording started", Toast.LENGTH_LONG).show();
+                }
+                else {
+
+                    requestPermission();
+
+                }
+
+            }
+        });
+
+        stopButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                mediaRecorder.stop();
+
+                stopButton.setEnabled(false);
+                recordButton.setEnabled(true);
+
+               //Toast.makeText(MainActivity.this, "Recording Completed", Toast.LENGTH_LONG).show();
+
+            }
+        });
+
     }
+
+    public void MediaRecorderReady(){
+
+        mediaRecorder=new MediaRecorder();
+
+        mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+
+        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+
+        mediaRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
+
+        mediaRecorder.setOutputFile(AudioSavePathInDevice);
+
+    }
+
+
+    private void requestPermission() {
+
+        ActivityCompat.requestPermissions(this, new String[]{WRITE_EXTERNAL_STORAGE, RECORD_AUDIO}, RequestPermissionCode);
+
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case RequestPermissionCode:
+                if (grantResults.length > 0) {
+
+                    boolean StoragePermission = grantResults[0] == PackageManager.PERMISSION_GRANTED;
+                    boolean RecordPermission = grantResults[1] == PackageManager.PERMISSION_GRANTED;
+
+                    if (StoragePermission && RecordPermission) {
+
+                        //Toast.makeText(MainActivity.this, "Permission Granted", Toast.LENGTH_LONG).show();
+                    }
+                    else {
+                        //Toast.makeText(MainActivity.this,"Permission Denied",Toast.LENGTH_LONG).show();
+
+                    }
+                }
+
+                break;
+        }
+    }
+
+    public boolean checkPermission() {
+
+        int result = ContextCompat.checkSelfPermission(getApplicationContext(), WRITE_EXTERNAL_STORAGE);
+        int result1 = ContextCompat.checkSelfPermission(getApplicationContext(), RECORD_AUDIO);
+
+        return result == PackageManager.PERMISSION_GRANTED && result1 == PackageManager.PERMISSION_GRANTED;
+    }
+
+    ////////////////////////
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {

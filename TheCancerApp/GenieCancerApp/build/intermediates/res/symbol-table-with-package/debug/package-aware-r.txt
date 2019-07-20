@@ -872,6 +872,8 @@ id all
 id always
 id app_menu_delete
 id app_menu_edit
+id app_record_edit
+id app_stop_edit
 id app_when_edit
 id app_when_time_edit
 id app_where_edit
@@ -977,6 +979,8 @@ id list_item_edit
 id main_content
 id masked
 id med_fri_edit
+id med_image_upload
+id med_image_view
 id med_instructions_edit
 id med_mon_edit
 id med_name_edit
@@ -1064,6 +1068,7 @@ id patient_parent_name
 id patient_phone
 id phone
 id pin
+id play
 id progress_circular
 id progress_horizontal
 id radio
@@ -1130,17 +1135,12 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
-id textView10
-id textView11
-id textView12
 id textView2
 id textView3
 id textView4
 id textView5
 id textView6
 id textView7
-id textView8
-id textView9
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1364,7 +1364,6 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
-string cybergeniesolutions_web
 string email_invalid_message
 string menu_call
 string menu_delete

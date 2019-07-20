@@ -54,7 +54,6 @@ public class MedicineActivity extends AppCompatActivity {
     private static Font small = new Font(Font.FontFamily.TIMES_ROMAN, 12,
             Font.NORMAL);
 
-    private static Tracker mTracker;
     private PDFHelper pdfHelper;
 
 
@@ -62,12 +61,6 @@ public class MedicineActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_empty);
-
-        // Obtain the shared Tracker instance.
-        MainActivity application = new MainActivity();
-        mTracker = application.getDefaultTracker();
-        mTracker.setScreenName(getResources().getString(R.string.title_activity_medicine));
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 

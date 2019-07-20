@@ -150,18 +150,12 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.nav_feedback) {
-            Uri uri = Uri.parse("https://www.surveymonkey.com/r/3YN6KWC"); // missing 'http://' will cause crashed
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
+
         } else if (id == R.id.nav_share) {
-            Intent i=new Intent(android.content.Intent.ACTION_SEND);
-            i.setType("text/plain");
-            i.putExtra(android.content.Intent.EXTRA_SUBJECT,"GenieCanHelp App");
-            i.putExtra(android.content.Intent.EXTRA_TEXT, "GenieCanHelp is a unique smartphone app designed to support and empower patients along their cancer journey. Visit www.geniecanhelpapp.com to download.");
-            startActivity(Intent.createChooser(i,"Share via"));
+
 
         } else if (id == R.id.nav_rate) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + "com.cybergeniesolutions.thecancerapp.thecancerapp")));
+
 
         }else if (id == R.id.nav_about) {
             Intent intent = new Intent(this, AboutActivity.class);
@@ -172,7 +166,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         }
         else if (id == R.id.nav_bug_report) {
-            Intent intent = new Intent(Intent.ACTION_SEND);
+           /* Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("message/rfc822");
             intent.putExtra(Intent.EXTRA_EMAIL  , new String[]{"support@cybergeniesolutions.com"});
             intent.putExtra(Intent.EXTRA_SUBJECT, "GenieCanHelp Android Bug Report");
@@ -186,7 +180,7 @@ public class MainActivity extends AppCompatActivity
                     best = info;
             if (best != null)
                 intent.setClassName(best.activityInfo.packageName, best.activityInfo.name);
-            startActivity(intent);
+            startActivity(intent);*/
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
