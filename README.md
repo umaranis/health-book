@@ -15,7 +15,7 @@ You can download this app from [@GenieCanHelp](http://geniecanhelpapp.com/) webs
 This folder contains the source code of GenieCanHelp Android Mobile application. If you want to contribute to this app visit [@Contribution Guide](https://github.com/CyberGenieSolutions/GenieCancerHelpAndroidApp/blob/master/CODE_OF_CONDUCT.md). 
 
 ## Screenshots
-![Example screenshot](./docs/Screenshot_20190721_Health_Book.jpg =300)
+![Example screenshot](./docs/Screenshot_20190721_Health_Book.jpg =300x)
 
 ## Technologies
 * Targeted for sdk version 26
