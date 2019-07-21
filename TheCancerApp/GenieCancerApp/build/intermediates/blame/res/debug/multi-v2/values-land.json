@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/home/umar/Downloads/GenieCancerHelpAndroidApp-master/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/sadafk/.gradle/caches/transforms-2/files-2.1/90c0cced20ab98dc7b2358268688fc66/res/values-land/values-land.xml",
+                    "source": "/home/umar/.gradle/caches/transforms-2/files-2.1/80352c6a1ae5beadcc7f0f4be65ad4e8/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                },
+                {
+                    "source": "/home/umar/.gradle/caches/transforms-2/files-2.1/8ba0d7975912384a31ab63736776c3a4/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "9",
                         "endColumns": "12",
                         "endOffsets": "505"
-                    }
-                },
-                {
-                    "source": "/Users/sadafk/.gradle/caches/transforms-2/files-2.1/f292d258e64e7087ea38b5204b9f7b9c/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,125,189,260",
-                        "endColumns": "69,63,70,67",
-                        "endOffsets": "120,184,255,323"
                     }
                 }
             ]

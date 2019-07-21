@@ -16,8 +16,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.google.android.gms.analytics.Tracker;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +35,6 @@ public class ListsActivity extends AppCompatActivity {
 
     private DataBaseHelper db;
     private static final int ACTIVITY_CREATE=0;
-    private static Tracker mTracker;
 
 
     @Override

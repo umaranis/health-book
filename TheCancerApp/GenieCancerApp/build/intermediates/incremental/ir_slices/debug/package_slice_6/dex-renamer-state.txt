@@ -1,1 +1,4 @@
-#Mon Jul 01 14:49:27 AEST 2019
+#Sun Jul 21 15:06:28 AEST 2019
+base.0=/home/umar/Downloads/GenieCancerHelpAndroidApp-master/TheCancerApp/GenieCancerApp/build/intermediates/transforms/dexMerger/debug/6
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml",
+            "outputFile": "/home/umar/Downloads/GenieCancerHelpAndroidApp-master/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml",
             "map": [
                 {
-                    "source": "/Users/sadafk/.gradle/caches/transforms-2/files-2.1/4cf8ed042f24a4875ef341e34d32d397/res/values-te/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "283,391,577,705,818,1014,1137,1260,1468,1574,1758,1884,2094,2279,2369,2463",
-                        "endColumns": "107,185,127,112,195,122,122,207,105,183,125,209,184,89,93,106",
-                        "endOffsets": "390,576,704,817,1013,1136,1259,1467,1573,1757,1883,2093,2278,2368,2462,2569"
-                    },
-                    "to": {
-                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2118,2230,2416,2548,2665,2861,2988,3314,3522,3632,3816,3946,4156,4345,4439,4537",
-                        "endColumns": "111,185,131,116,195,126,126,207,109,183,129,209,188,93,97,110",
-                        "endOffsets": "2225,2411,2543,2660,2856,2983,3110,3517,3627,3811,3941,4151,4340,4434,4532,4643"
-                    }
-                },
-                {
-                    "source": "/Users/sadafk/.gradle/caches/transforms-2/files-2.1/b51ddda316358a7fdea358032699484b/res/values-te/values.xml",
+                    "source": "/home/umar/.gradle/caches/transforms-2/files-2.1/6005f50a21dd8ce28c1ac306631b6287/res/values-te/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/sadafk/.gradle/caches/transforms-2/files-2.1/f292d258e64e7087ea38b5204b9f7b9c/res/values-te/values-te.xml",
+                    "source": "/home/umar/.gradle/caches/transforms-2/files-2.1/1871bc547f4920bdf03ed987c3a6e62e/res/values-te/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "283,391,577,705,818,1014,1137,1260,1468,1574,1758,1884,2094,2279,2369,2463",
+                        "endColumns": "107,185,127,112,195,122,122,207,105,183,125,209,184,89,93,106",
+                        "endOffsets": "390,576,704,817,1013,1136,1259,1467,1573,1757,1883,2093,2278,2368,2462,2569"
+                    },
+                    "to": {
+                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2118,2230,2416,2548,2665,2861,2988,3314,3522,3632,3816,3946,4156,4345,4439,4537",
+                        "endColumns": "111,185,131,116,195,126,126,207,109,183,129,209,188,93,97,110",
+                        "endOffsets": "2225,2411,2543,2660,2856,2983,3110,3517,3627,3811,3941,4151,4340,4434,4532,4643"
+                    }
+                },
+                {
+                    "source": "/home/umar/.gradle/caches/transforms-2/files-2.1/80352c6a1ae5beadcc7f0f4be65ad4e8/res/values-te/values-te.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

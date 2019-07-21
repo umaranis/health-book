@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GenieCanHelp</string>
+    <string name="app_name">Health Book</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -19,6 +19,12 @@
     <string name="action_links">Links</string>
     <string name="action_lists">Lists</string>
     <string name="action_temp">BODY TEMPERATURE</string>
+    <string name="action_health_summary">HEALTH SUMMARY</string>
+    <string name="action_finance">Finance</string>
+    <string name="action_test_results">TEST RESULTS</string>
+    <string name="action_treatment">TREATMENT</string>
+    <string name="action_symptoms">SYMPTOMS</string>
+    <string name="action_heartrate">HEART RATE</string>
 
     <string name="action_breath">Breath</string>
     <string name="action_meditate">Meditate</string>
@@ -72,8 +78,6 @@
     <string name="radio_ml">ml</string>
     <string name="radio_oz">oz</string>
     <string name="radio_cup">cup</string>
-
-    <string name="cybergeniesolutions_web"><a href="http://www.cybergeniesolutions.com">http://www.cybergeniesolutions.com</a></string>
 
 
     <string name="useful_link1_text">Download your ‘Cooking for Chemo’ recipe book here</string>

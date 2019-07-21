@@ -7,9 +7,14 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.ParseException;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -21,9 +26,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.google.android.gms.analytics.Tracker;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -49,9 +54,8 @@ public class MedicineEditActivity extends AppCompatActivity{
     private Button satButton;
     private Button noOfTimesButton;
     private TextView repeatTextView;
-
-    private static Tracker mTracker;
-
+    private ImageView picImageView;
+    private Button uploadPicButton;
 
     private Long rowId;
     private DataBaseHelper dbHelper;
@@ -90,6 +94,8 @@ public class MedicineEditActivity extends AppCompatActivity{
         friButton = (Button) findViewById(R.id.med_fri_edit);
         satButton = (Button) findViewById(R.id.med_sat_edit);
         repeatTextView = (TextView) findViewById(R.id.med_repeat_edit);
+        picImageView = (ImageView) findViewById(R.id.med_image_view);
+        uploadPicButton = (Button) findViewById(R.id.med_image_upload);
 
         radioButtonSelected = "Daily";
 
@@ -149,6 +155,45 @@ public class MedicineEditActivity extends AppCompatActivity{
             }
         });
 
+    }
+
+    static final int REQUEST_IMAGE_CAPTURE = 0;
+
+    private void selectImage() {
+        final CharSequence[] options = { "Take Photo", "Choose from Gallery","Cancel" };
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(MedicineEditActivity.this);
+        builder.setTitle("Choose your profile picture");
+
+        Log.v(TAG, "in selectImage()");
+        builder.setItems(options, new DialogInterface.OnClickListener() {
+
+            @Override
+            public void onClick(DialogInterface dialog, int item) {
+
+                if (options[item].equals("Take Photo")) {
+
+                    //boolean b = context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY);
+                    Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                    if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+                        startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+                    }
+
+
+                } else if (options[item].equals("Choose from Gallery")) {
+                    Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                    intent.setType("image/*");
+                    if (intent.resolveActivity(getPackageManager()) != null) {
+                        startActivityForResult(intent, 1);
+                    }
+                }
+
+                 else if (options[item].equals("Cancel")) {
+                    dialog.dismiss();
+                }
+            }
+        });
+        builder.show();
     }
 
     private void showDialogForNoOfTimes() {
@@ -221,7 +266,7 @@ public class MedicineEditActivity extends AppCompatActivity{
     @Override
     protected void onPause() {
         super.onPause();
-        dbHelper.close();
+        //dbHelper.close();
     }
 
     @Override
@@ -341,6 +386,13 @@ public class MedicineEditActivity extends AppCompatActivity{
 
     private void registerButtonListenersAndSetDefaultText() {
 
+        uploadPicButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                selectImage();
+            }
+        });
+
         startDateButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -455,7 +507,7 @@ public class MedicineEditActivity extends AppCompatActivity{
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putLong(DataBaseHelper.KEY_ROWID, rowId);
+        //outState.putLong(DataBaseHelper.KEY_ROWID, rowId);
     }
 
     private boolean saveState() {
@@ -625,11 +677,34 @@ public class MedicineEditActivity extends AppCompatActivity{
         startDateButton.setText(dateForButton);
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent intent)
-    {
-        super.onActivityResult(requestCode, resultCode, intent);
 
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        Log.v(TAG, "In onActivityResult 1");
+        super.onActivityResult(requestCode, resultCode, data);
+
+        Log.v(TAG, "In onActivityResult 2");
+
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            picImageView.setImageBitmap(imageBitmap);
+        }
+        else if (requestCode == 1 && resultCode == RESULT_OK && null != data) {
+            Log.v(TAG, "In onActivityResult 3");
+            Uri selectedImage = data.getData();
+            String[] filePathColumn = {MediaStore.Images.Media.DATA};
+
+            Cursor cursor = getContentResolver().query(selectedImage,
+                    filePathColumn, null, null, null);
+            cursor.moveToFirst();
+
+            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+            String picturePath = cursor.getString(columnIndex);
+            cursor.close();
+
+            // String picturePath contains the path of selected Image
+        }
     }
 
 }

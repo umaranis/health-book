@@ -10,8 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
 
 /**
  * Created by sadafk on 11/05/2017.
@@ -22,19 +20,12 @@ public class OnRecieverMedicineActivity extends AppCompatActivity {
     private static final String TAG = "OnRecieveMedicineActivity";
     private TextView bodyTextView;
     private Button buttonOK;
-    private static Tracker mTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.AppDialogTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.medicine_reminder_layout);
-
-        // Obtain the shared Tracker instance.
-        MainActivity application = new MainActivity();
-        mTracker = application.getDefaultTracker();
-        mTracker.setScreenName(getResources().getString(R.string.title_activity_reminder_med));
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 
         dbHelper = new DataBaseHelper(this);
         bodyTextView = (TextView) findViewById(R.id.body);

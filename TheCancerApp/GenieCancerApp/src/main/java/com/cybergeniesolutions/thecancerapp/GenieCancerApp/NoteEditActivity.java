@@ -17,8 +17,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-import com.google.android.gms.analytics.Tracker;
-
 public class NoteEditActivity extends AppCompatActivity {
     public static int numTitle = 1;
     public static String curDate = "";
@@ -26,8 +24,6 @@ public class NoteEditActivity extends AppCompatActivity {
     private EditText mTitleText;
     private EditText mBodyText;
     private Long mRowId;
-
-    private static Tracker mTracker;
 
     private Cursor note;
 

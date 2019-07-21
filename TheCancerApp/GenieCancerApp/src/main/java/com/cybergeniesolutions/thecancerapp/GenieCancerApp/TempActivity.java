@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
@@ -14,8 +16,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Font;
@@ -37,9 +37,9 @@ import java.util.List;
  */
 public class TempActivity extends AppCompatActivity {
 
-    private GridLayoutManager lLayout;
     List<Temperature> tempList = new ArrayList<>();
     TempAdapter rcAdapter;
+    private RecyclerView rView;
     private static final String TAG = "TempActivity";
 
     private DataBaseHelper db;
@@ -51,8 +51,6 @@ public class TempActivity extends AppCompatActivity {
             Font.BOLD);
     private static Font small = new Font(Font.FontFamily.TIMES_ROMAN, 12,
             Font.NORMAL);
-
-    private static Tracker mTracker;
     private PDFHelper pdfHelper;
 
 
@@ -61,24 +59,23 @@ public class TempActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_empty);
 
-        // Obtain the shared Tracker instance.
-        MainActivity application = new MainActivity();
-        mTracker = application.getDefaultTracker();
-        mTracker.setScreenName(getResources().getString(R.string.title_activity_temp));
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
-
-        lLayout = new GridLayoutManager(TempActivity.this, 1);
 
         //Action bar
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        RecyclerView rView = (RecyclerView)findViewById(R.id.recycler_view);
-        rView.setHasFixedSize(true);
-        rView.setLayoutManager(lLayout);
+        rView = (RecyclerView) findViewById(R.id.recycler_view);
 
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+        rView.setLayoutManager(mLayoutManager);
+
+        rView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
+        rView.setHasFixedSize(true);
+        rView.setLayoutManager(mLayoutManager);
         rcAdapter = new TempAdapter(TempActivity.this, tempList);
         rView.setAdapter(rcAdapter);
+
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_add);
         fab.setOnClickListener(new View.OnClickListener() {

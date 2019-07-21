@@ -13,9 +13,6 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +30,6 @@ public class ContactActivity extends AppCompatActivity {
     private static final int ACTIVITY_CREATE=0;
     private static final int ACTIVITY_EDIT=1;
     private String TYPE;
-    private static Tracker mTracker;
 
 
     @Override
@@ -42,11 +38,6 @@ public class ContactActivity extends AppCompatActivity {
         setContentView(R.layout.content_empty);
         context = getApplicationContext();
 
-        // Obtain the shared Tracker instance.
-        MainActivity application = new MainActivity();
-        mTracker = application.getDefaultTracker();
-        mTracker.setScreenName(getResources().getString(R.string.title_activity_contact));
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 

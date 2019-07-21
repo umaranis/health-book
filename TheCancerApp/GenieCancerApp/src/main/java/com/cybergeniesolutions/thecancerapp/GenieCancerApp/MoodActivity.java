@@ -14,8 +14,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Font;
@@ -47,9 +45,6 @@ public class MoodActivity  extends AppCompatActivity {
             Font.BOLD);
     private static Font small = new Font(Font.FontFamily.TIMES_ROMAN, 12,
             Font.NORMAL);
-
-    private static Tracker mTracker;
-
     private PDFHelper pdfHelper;
 
 
@@ -57,12 +52,6 @@ public class MoodActivity  extends AppCompatActivity {
 protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_empty);
-
-        // Obtain the shared Tracker instance.
-        MainActivity application = new MainActivity();
-        mTracker = application.getDefaultTracker();
-        mTracker.setScreenName(getResources().getString(R.string.title_activity_mood));
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 
         //Action bar
         getSupportActionBar().setHomeButtonEnabled(true);

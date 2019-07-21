@@ -16,9 +16,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.google.android.gms.analytics.GoogleAnalytics;
-import com.google.android.gms.analytics.Tracker;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,13 +24,11 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private GridLayoutManager lLayout;
-    private static GoogleAnalytics sAnalytics;
-    private static Tracker sTracker;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        sAnalytics = GoogleAnalytics.getInstance(this);
 
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -57,15 +52,6 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-    }
-
-    synchronized public Tracker getDefaultTracker() {
-        // To enable debug logging use: adb shell setprop log.tag.GAv4 DEBUG
-        if (sTracker == null) {
-            sTracker = sAnalytics.newTracker(R.xml.global_tracker);
-        }
-
-        return sTracker;
     }
 
 
@@ -150,18 +136,12 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.nav_feedback) {
-            Uri uri = Uri.parse("https://www.surveymonkey.com/r/3YN6KWC"); // missing 'http://' will cause crashed
-            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(intent);
+
         } else if (id == R.id.nav_share) {
-            Intent i=new Intent(android.content.Intent.ACTION_SEND);
-            i.setType("text/plain");
-            i.putExtra(android.content.Intent.EXTRA_SUBJECT,"GenieCanHelp App");
-            i.putExtra(android.content.Intent.EXTRA_TEXT, "GenieCanHelp is a unique smartphone app designed to support and empower patients along their cancer journey. Visit www.geniecanhelpapp.com to download.");
-            startActivity(Intent.createChooser(i,"Share via"));
+
 
         } else if (id == R.id.nav_rate) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + "com.cybergeniesolutions.thecancerapp.thecancerapp")));
+
 
         }else if (id == R.id.nav_about) {
             Intent intent = new Intent(this, AboutActivity.class);
@@ -172,7 +152,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         }
         else if (id == R.id.nav_bug_report) {
-            Intent intent = new Intent(Intent.ACTION_SEND);
+           /* Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("message/rfc822");
             intent.putExtra(Intent.EXTRA_EMAIL  , new String[]{"support@cybergeniesolutions.com"});
             intent.putExtra(Intent.EXTRA_SUBJECT, "GenieCanHelp Android Bug Report");
@@ -186,7 +166,7 @@ public class MainActivity extends AppCompatActivity
                     best = info;
             if (best != null)
                 intent.setClassName(best.activityInfo.packageName, best.activityInfo.name);
-            startActivity(intent);
+            startActivity(intent);*/
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -209,6 +189,13 @@ public class MainActivity extends AppCompatActivity
         allItems.add(new MainMenuItem(getResources().getString(R.string.action_fluid_intake), R.drawable.fluid_intake));
         allItems.add(new MainMenuItem(getResources().getString(R.string.title_activity_links), R.drawable.link));
         allItems.add(new MainMenuItem(getResources().getString(R.string.title_activity_lists), R.drawable.list));
+        allItems.add(new MainMenuItem(getResources().getString(R.string.action_health_summary), R.drawable.health_summary));
+        allItems.add(new MainMenuItem(getResources().getString(R.string.action_finance), R.drawable.finance));
+        allItems.add(new MainMenuItem(getResources().getString(R.string.action_test_results), R.drawable.test_result));
+        allItems.add(new MainMenuItem(getResources().getString(R.string.action_treatment), R.drawable.treatments));
+        allItems.add(new MainMenuItem(getResources().getString(R.string.action_symptoms), R.drawable.symptons));
+        allItems.add(new MainMenuItem(getResources().getString(R.string.action_sleep), R.drawable.sleep_tracker));
+        allItems.add(new MainMenuItem(getResources().getString(R.string.action_heartrate), R.drawable.heartrate_tracker));
         //allItems.add(new MainMenuItem(getResources().getString(R.string.action_sleep), R.drawable.list));
 
         return allItems;

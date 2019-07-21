@@ -1,14 +1,19 @@
 package com.cybergeniesolutions.thecancerapp.GenieCancerApp;
 
+import android.Manifest;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.ParseException;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +27,8 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+
+import static java.lang.Integer.parseInt;
 
 /**
  * Created by sadafk on 27/07/2017.
@@ -90,15 +97,85 @@ public class TempEditActivity extends AppCompatActivity {
 
         Log.v(TAG, "In TempEditActivity onCreate()");
 
+        /*Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+        sendIntent.putExtra("sms_body", "default content");
+        sendIntent.setType("vnd.android-dir/mms-sms");
+        startActivity(sendIntent);*/
+
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_add);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if(saveState())
+                if(saveState()) {
+                    // get selected radio button from radioGroup
+                    int selectedId = radioTempGroup.getCheckedRadioButtonId();
+                    if(selectedId == radioButtonC.getId())
+                        selectedId = 0;
+                    else
+                        selectedId = 1;
+                    float i = Float.parseFloat(tempText.getText().toString());
+                    if((i >= 39 && selectedId == 0) || (i >= 102 && selectedId == 1)) {
+                        sendSMSMessage();
+                    }
                     finish();
+                }
             }
         });
+
+    }
+
+    protected void sendSMSMessage() {
+        int results = ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS);
+        if (results
+                != PackageManager.PERMISSION_GRANTED) {
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.SEND_SMS)) {
+            } else {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.SEND_SMS},
+                        123);
+            }
+        }else
+        {
+            String message = tempText.getText().toString();
+            int selectedId = radioTempGroup.getCheckedRadioButtonId();
+            if(selectedId == radioButtonC.getId())
+                message = message + "C";
+            else
+                message = message + "F";
+            SmsManager smsManager = SmsManager.getDefault();
+            String[] phone_numbers = new String[2];
+            phone_numbers[0] = "+61434193212";
+            phone_numbers[1] = "+61484303228";
+            smsManager.sendTextMessage(phone_numbers[0], null, "Body temperature is " + message, null, null);
+            smsManager.sendTextMessage(phone_numbers[1], null, "Body temperature is " + message, null, null);
+            //smsManager.sendTextMessage("+61430147876", null, "Body temperature is " + message, null, null);
+
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case 123: {
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    SmsManager smsManager = SmsManager.getDefault();
+                    String[] phone_numbers = new String[2];
+                    phone_numbers[0] = "+61434193212";
+                    phone_numbers[1] = "+61484303228";
+                    smsManager.sendTextMessage(phone_numbers[0], null, "test message", null, null);
+                    smsManager.sendTextMessage(phone_numbers[1], null, "test message", null, null);
+
+                } else {
+                    Toast.makeText(getApplicationContext(),
+                            "SMS faild, please try again.", Toast.LENGTH_LONG).show();
+                    return;
+                }
+            }
+        }
 
     }
 
@@ -118,7 +195,7 @@ public class TempEditActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        dbHelper.close();
+        //dbHelper.close();
     }
 
     @Override
@@ -160,8 +237,8 @@ public class TempEditActivity extends AppCompatActivity {
                         dayButton.setText(getDayString(day));
                     } catch (ParseException e) { Log.e(TAG, e.getMessage(), e); }
                     updateDateButtonText();
-                    int hour = Integer.parseInt(time.substring(0,2));
-                    int min = Integer.parseInt(time.substring(time.length() - 2));
+                    int hour = parseInt(time.substring(0,2));
+                    int min = parseInt(time.substring(time.length() - 2));
                     Log.v(TAG, "populating time =" + hour + ":" + min);
                     cal.set(Calendar.HOUR_OF_DAY, hour);
                     cal.set(Calendar.MINUTE, min);
@@ -196,7 +273,7 @@ public class TempEditActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putLong(DataBaseHelper.KEY_ROWID, rowId);
+        //outState.putLong(DataBaseHelper.KEY_ROWID, rowId);
     }
 
     private boolean saveState() {

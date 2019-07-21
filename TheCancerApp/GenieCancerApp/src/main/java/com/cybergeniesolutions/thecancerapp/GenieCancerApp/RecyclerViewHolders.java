@@ -86,6 +86,11 @@ public class RecyclerViewHolders extends RecyclerView.ViewHolder implements View
                 view.getContext().startActivity(intent);
                 break;
             }
+            case 16: {
+                Intent intent = new Intent(view.getContext(), SleepActivity.class);
+                view.getContext().startActivity(intent);
+                break;
+            }
         }
     }
 }

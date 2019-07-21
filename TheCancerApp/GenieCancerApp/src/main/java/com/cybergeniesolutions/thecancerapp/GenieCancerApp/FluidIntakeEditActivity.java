@@ -52,7 +52,6 @@ public class FluidIntakeEditActivity extends AppCompatActivity {
     private static final String DATE_FORMAT = "dd-MM-yyyy";
     private Context context;
     private int checkedRadiobuttonId;
-    private static Tracker mTracker;
 
 
     public void onCreate(Bundle savedInstanceState) {

@@ -5,15 +5,19 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.os.Environment;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -29,12 +33,14 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView with, where, when;
+        public Button play;
 
         public MyViewHolder(View view) {
             super(view);
             with = (TextView) view.findViewById(R.id.with);
             where = (TextView) view.findViewById(R.id.where);
             when = (TextView) view.findViewById(R.id.when);
+            play = (Button) view.findViewById(R.id.play);
         }
     }
 
@@ -59,6 +65,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
         holder.with.setText(appointment.getWith());
         holder.when.setText(appointment.getWhen()+ " at "+appointment.getWhenTime());
         holder.where.setText(appointment.getWhere());
+        holder.play.setText("play");
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,6 +106,29 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
                 });
                 //displaying the popup
                 popup.show();
+            }
+        });
+
+        holder.play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) throws IllegalArgumentException, SecurityException, IllegalStateException {
+
+                /*MediaPlayer mediaPlayer ;
+                String AudioSavePathInDevice = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + "App" + "AudioRecording.3gp";
+
+                mediaPlayer = new MediaPlayer();
+
+                try {
+                    mediaPlayer.setDataSource(AudioSavePathInDevice);
+                    mediaPlayer.prepare();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                mediaPlayer.start();*/
+
+                //Toast.makeText(MainActivity.this, "Recording Playing", Toast.LENGTH_LONG).show();
+
             }
         });
     }

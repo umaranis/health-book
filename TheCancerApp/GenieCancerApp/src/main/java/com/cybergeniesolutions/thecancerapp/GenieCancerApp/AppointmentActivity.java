@@ -17,8 +17,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Font;
@@ -42,7 +40,6 @@ public class AppointmentActivity extends AppCompatActivity {
     private List<Appointment> appointmentList = new ArrayList<>();
     private RecyclerView recyclerView;
     private AppointmentAdapter mAdapter;
-    private static Tracker mTracker;
     private PDFHelper pdfHelper;
 
 
@@ -62,11 +59,6 @@ public class AppointmentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_empty);
-        // Obtain the shared Tracker instance.
-        MainActivity application = new MainActivity();
-        mTracker = application.getDefaultTracker();
-        mTracker.setScreenName(getResources().getString(R.string.title_activity_appointment));
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 
         //Action bar
         getSupportActionBar().setHomeButtonEnabled(true);

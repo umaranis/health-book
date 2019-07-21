@@ -19,7 +19,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     private Context context;
     private String DB_PATH = "data/data/com.cybergeniesolutions.thecancerapp.thecancerapp/databases/";
     private static String DB_NAME = "thecancerapp.db";
-    public static final int DB_VERSION = 26;
+    public static final int DB_VERSION = 28;
     public static final String KEY_ROWID = "_id";
     public static final String DATE_FORMAT = "dd-MM-yyyy";
     public static final String R_DATE = "R_Date";
@@ -104,6 +104,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String TABLE_TEMP = "Temperatures";
     public static final String TABLE_OXYGEN_LEVEL = "OxygenLevels";
     public static final String TABLE_FLUID_INTAKE = "FluidIntake";
+    public static final String TABLE_HEARTRATE = "HeartRate";
+    public static final String TABLE_SLEEP = "Sleep";
 
     private static final String CREATE_FLUID_INTAKE_TABLE = "create table " + TABLE_FLUID_INTAKE + " ("
             + KEY_ROWID + " integer primary key autoincrement, "
@@ -247,6 +249,18 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             + S_TITLE + " text not null, "
             + S_VALUE + " text not null, "
             + KEY_ROWID + " integer primary key autoincrement);";
+
+    private static final String CREATE_HEARTRATE_TABLE = "create table " + TABLE_HEARTRATE + " ("
+            + "Day text not null, "
+            + "HeartRate integer not null, "
+            + "_id integer primary key autoincrement);";
+
+    private static final String CREATE_SLEEP_TABLE = "create table " + TABLE_SLEEP + " ("
+            + "Day text not null, "
+            + "Total_Minutes integer not null, "
+            + "Sleep_Count integer not null, "
+            + "Time_In_Bed integer not null, "
+            + "_id integer primary key autoincrement);";
 
 
 
@@ -408,6 +422,16 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         initialValues.put(A_WHEN_TIME, time);
         initialValues.put(A_REM, rem);
         return  mDataBase.insert(TABLE_APPOINTMENTS, null, initialValues);
+    }
+
+    public long addSleep(String date, int total_Minutes, int sleep_Count, int time_In_Bed) {
+        Log.v(TAG, "addSleep()");
+        ContentValues initialValues = new ContentValues();
+        initialValues.put("day", date);
+        initialValues.put("Total_Minutes", total_Minutes);
+        initialValues.put("Sleep_Count", sleep_Count);
+        initialValues.put("Time_In_Bed", time_In_Bed);
+        return  mDataBase.insert(TABLE_SLEEP, null, initialValues);
     }
 
     public long addContact(String name, String phone,String email,String street,String suburb,String state, String postCode,String type) {
@@ -1122,6 +1146,10 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return 	mDataBase.delete(TABLE_FLUID_INTAKE, KEY_ROWID + "=" + rowId, null) > 0;
     }
 
+    public int deleteSleepAll() {
+        return mDataBase.delete(TABLE_SLEEP, "1=1", null);
+    }
+
 
     @Override
     public synchronized void close() {
@@ -1172,6 +1200,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
         db.execSQL(CREATE_FLUID_INTAKE_TABLE);
         Log.v(TAG, "onCreate() FluidIntakes table created");
+
+        db.execSQL(CREATE_SLEEP_TABLE);
+        Log.v(TAG, "onCreate() Sleep table created");
 
         ContentValues initialValues1 = new ContentValues();
         initialValues1.put(S_TITLE, "Appointments_Reminders");
@@ -1285,8 +1316,16 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
             db.execSQL(CREATE_FLUID_INTAKE_TABLE);
             Log.v(TAG, "onCreate() FluidIntakes table created");
+
+            db.execSQL(CREATE_SLEEP_TABLE);
+            Log.v(TAG, "onCreate() Sleep table created");
         }
 
+    }
+
+    public Cursor fetchAllSleep() {
+        Log.v(TAG, "inside fetchAllRecords()");
+        return mDataBase.query(TABLE_SLEEP, new String[]{KEY_ROWID, "Day", "Total_Minutes", "Sleep_Count", "Time_In_Bed"}, null, null, null, null, null);
     }
 }
 

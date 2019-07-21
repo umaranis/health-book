@@ -28,4 +28,5 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:26.0.2'
     implementation files('libs/itext5-itextpdf-5.5.11.jar')
     implementation 'com.google.android.gms:play-services-analytics:10.2.4'
+    implementation 'com.android.volley:volley:1.1.1'
 }

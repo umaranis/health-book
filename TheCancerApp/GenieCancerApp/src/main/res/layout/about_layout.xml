@@ -16,16 +16,8 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:textColor="@color/colorPrimary"
-            android:text="CyberGenie Solutions is an App development company. We have a mission to:\n\nDevelop most interesting and reliable software solutions, services and applications. Doing research and product development in latest technologies.
-        \n\nFor details visit:" />
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:textColor="@color/colorPrimary"
-            android:textColorLink="@color/colorGenie"
-            android:autoLink="web"
-            android:text="@string/cybergeniesolutions_web" />
+            android:text="About Text" />
+
 
     </LinearLayout>
 

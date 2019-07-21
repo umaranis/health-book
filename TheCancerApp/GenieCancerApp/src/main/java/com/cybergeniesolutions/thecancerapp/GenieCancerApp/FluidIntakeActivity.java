@@ -11,15 +11,26 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by sadafk on 21/12/2017.
@@ -33,7 +44,6 @@ public class FluidIntakeActivity extends AppCompatActivity {
 
     private DataBaseHelper db;
     private static final int ACTIVITY_CREATE=0;
-    private static Tracker mTracker;
     private static final String DATE_FORMAT = "dd-MM-yyyy";
     private Calendar cal;
 
@@ -42,11 +52,6 @@ public class FluidIntakeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_empty);
 
-        // Obtain the shared Tracker instance.
-        MainActivity application = new MainActivity();
-        mTracker = application.getDefaultTracker();
-        mTracker.setScreenName(getResources().getString(R.string.title_activity_fluid_intake));
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 
         lLayout = new GridLayoutManager(FluidIntakeActivity.this, 1);
 
@@ -75,6 +80,9 @@ public class FluidIntakeActivity extends AppCompatActivity {
         fillData();
 
     }
+
+
+
     private void fillData() {
 
         Log.v(TAG, "in filldata()");

@@ -19,6 +19,15 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <!-- Optional permission for Analytics to run. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -151,6 +160,10 @@
             android:name="com.cybergeniesolutions.thecancerapp.GenieCancerApp.FluidIntakeEditActivity"
             android:label="@string/title_activity_fluid_intake" >
         </activity>
+        <activity
+            android:name="com.cybergeniesolutions.thecancerapp.GenieCancerApp.SleepActivity"
+            android:label="Sleep" >
+        </activity>
 
         <receiver
             android:name="com.cybergeniesolutions.thecancerapp.GenieCancerApp.BootBroadcastReceiver"
@@ -191,6 +204,11 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.cybergeniesolutions.thecancerapp.GenieCancerApp.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

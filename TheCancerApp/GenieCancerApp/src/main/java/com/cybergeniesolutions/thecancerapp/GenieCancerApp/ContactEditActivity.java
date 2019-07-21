@@ -11,8 +11,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.analytics.Tracker;
-
 import java.util.regex.Pattern;
 
 /**
@@ -31,7 +29,6 @@ public class ContactEditActivity extends AppCompatActivity {
     private Long rowId;
     private DataBaseHelper dbHelper;
     private static final String TAG = "ContactEditActivity";
-    private static Tracker mTracker;
 
 
     public final Pattern EMAIL_ADDRESS_PATTERN = Pattern.compile(

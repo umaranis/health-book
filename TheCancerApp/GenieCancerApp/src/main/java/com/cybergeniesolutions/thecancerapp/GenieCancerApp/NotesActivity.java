@@ -12,8 +12,6 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;
 import com.itextpdf.text.Font;
 
 import java.util.ArrayList;
@@ -35,7 +33,6 @@ public class NotesActivity extends AppCompatActivity {
             Font.BOLD);
     private static Font smallBold = new Font(Font.FontFamily.TIMES_ROMAN, 12,
             Font.BOLD);
-    private static Tracker mTracker;
 
 
     @Override
@@ -43,11 +40,6 @@ public class NotesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.generic_list);
 
-        // Obtain the shared Tracker instance.
-        MainActivity application = new MainActivity();
-        mTracker = application.getDefaultTracker();
-        mTracker.setScreenName(getResources().getString(R.string.title_activity_notes));
-        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 

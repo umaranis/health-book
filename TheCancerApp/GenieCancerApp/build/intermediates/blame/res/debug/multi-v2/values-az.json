@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml",
+            "outputFile": "/home/umar/Downloads/GenieCancerHelpAndroidApp-master/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml",
             "map": [
                 {
-                    "source": "/Users/sadafk/.gradle/caches/transforms-2/files-2.1/b51ddda316358a7fdea358032699484b/res/values-az/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "285",
-                        "endColumns": "220",
-                        "endOffsets": "505"
-                    },
-                    "to": {
-                        "startLines": "27",
-                        "startColumns": "4",
-                        "startOffsets": "2963",
-                        "endColumns": "220",
-                        "endOffsets": "3179"
-                    }
-                },
-                {
-                    "source": "/Users/sadafk/.gradle/caches/transforms-2/files-2.1/f292d258e64e7087ea38b5204b9f7b9c/res/values-az/values-az.xml",
+                    "source": "/home/umar/.gradle/caches/transforms-2/files-2.1/80352c6a1ae5beadcc7f0f4be65ad4e8/res/values-az/values-az.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/sadafk/.gradle/caches/transforms-2/files-2.1/4cf8ed042f24a4875ef341e34d32d397/res/values-az/values.xml",
+                    "source": "/home/umar/.gradle/caches/transforms-2/files-2.1/1871bc547f4920bdf03ed987c3a6e62e/res/values-az/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -52,6 +35,23 @@
                         "startOffsets": "1943,2054,2241,2376,2488,2693,2828,3184,3409,3521,3701,3840,4043,4229,4323,4418",
                         "endColumns": "110,186,134,111,204,134,134,224,111,179,138,202,185,93,94,109",
                         "endOffsets": "2049,2236,2371,2483,2688,2823,2958,3404,3516,3696,3835,4038,4224,4318,4413,4523"
+                    }
+                },
+                {
+                    "source": "/home/umar/.gradle/caches/transforms-2/files-2.1/6005f50a21dd8ce28c1ac306631b6287/res/values-az/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "220",
+                        "endOffsets": "505"
+                    },
+                    "to": {
+                        "startLines": "27",
+                        "startColumns": "4",
+                        "startOffsets": "2963",
+                        "endColumns": "220",
+                        "endOffsets": "3179"
                     }
                 }
             ]

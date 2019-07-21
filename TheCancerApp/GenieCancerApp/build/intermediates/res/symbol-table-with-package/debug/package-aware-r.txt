@@ -782,6 +782,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable email
 drawable email_icon
+drawable finance
 drawable fluid_intake
 drawable frown
 drawable frown_teal
@@ -789,6 +790,9 @@ drawable geniebutton
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable happy_icon
+drawable health_summary
+drawable heartrate_tracker
+drawable ic_launcher
 drawable ic_menu_about
 drawable ic_menu_bug
 drawable ic_menu_camera
@@ -830,11 +834,16 @@ drawable phone_icon
 drawable profile
 drawable reminderlogo
 drawable side_nav_bar
+drawable sleep_tracker
 drawable smile
 drawable smile_teal
+drawable symptoms
+drawable symptons
 drawable temperature
+drawable test_result
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable treatments
 drawable waterintake
 id ALT
 id CTRL
@@ -870,8 +879,10 @@ id adjust_width
 id alertTitle
 id all
 id always
+id app_generate_transcript_edit
 id app_menu_delete
 id app_menu_edit
+id app_transcript_edit
 id app_when_edit
 id app_when_time_edit
 id app_where_edit
@@ -911,6 +922,7 @@ id country_photo
 id custom
 id customPanel
 id dark
+id day
 id day_and_date
 id decor_content_parent
 id default_activity_button
@@ -950,6 +962,7 @@ id fluid_intake_lrg_bottle
 id fluid_intake_unit
 id forever
 id ghost_view
+id heart_rate
 id height
 id home
 id homeAsUp
@@ -977,6 +990,8 @@ id list_item_edit
 id main_content
 id masked
 id med_fri_edit
+id med_image_upload
+id med_image_view
 id med_instructions_edit
 id med_mon_edit
 id med_name_edit
@@ -1019,6 +1034,7 @@ id n_title
 id name
 id nav_about
 id nav_bug_report
+id nav_carer_report
 id nav_feedback
 id nav_gallery
 id nav_manage
@@ -1064,6 +1080,7 @@ id patient_parent_name
 id patient_phone
 id phone
 id pin
+id play
 id progress_circular
 id progress_horizontal
 id radio
@@ -1102,6 +1119,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sleep_count
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1130,21 +1148,17 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
-id textView10
-id textView11
-id textView12
 id textView2
 id textView3
 id textView4
 id textView5
 id textView6
 id textView7
-id textView8
-id textView9
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
 id time
+id time_in_bed
 id title
 id title2
 id titleDividerNoCustom
@@ -1154,6 +1168,7 @@ id toolbar
 id top
 id topPanel
 id toplayout
+id total_mins
 id touch_outside
 id transition_current_scene
 id transition_layout_save
@@ -1242,6 +1257,7 @@ layout fluid_edit
 layout fluid_intake_row
 layout generic_list
 layout generic_list_row
+layout heart_rate_row
 layout links_layout
 layout list_item_edit_prompt
 layout list_layout
@@ -1278,6 +1294,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout settings_layout
+layout sleep_row
 layout support_simple_spinner_dropdown_item
 layout temp_edit
 layout temp_row
@@ -1328,7 +1345,10 @@ string action_appointments
 string action_breath
 string action_calm
 string action_contacts
+string action_finance
 string action_fluid_intake
+string action_health_summary
+string action_heartrate
 string action_links
 string action_list1
 string action_list2
@@ -1342,7 +1362,10 @@ string action_prayers
 string action_profile
 string action_settings
 string action_sleep
+string action_symptoms
 string action_temp
+string action_test_results
+string action_treatment
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -1364,7 +1387,6 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
-string cybergeniesolutions_web
 string email_invalid_message
 string menu_call
 string menu_delete

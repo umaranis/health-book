@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sadafk/Documents/personal/GenieCanHelp/Android_Version/Version 1.4/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/home/umar/Downloads/GenieCancerHelpAndroidApp-master/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/sadafk/.gradle/caches/transforms-2/files-2.1/12d5778b92b86d186631ad18c069ac03/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/Users/sadafk/.gradle/caches/transforms-2/files-2.1/f292d258e64e7087ea38b5204b9f7b9c/res/values-v16/values-v16.xml",
+                    "source": "/home/umar/.gradle/caches/transforms-2/files-2.1/80352c6a1ae5beadcc7f0f4be65ad4e8/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/umar/.gradle/caches/transforms-2/files-2.1/99bb71ee9480af7a0fb05523ef44f3b9/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]
