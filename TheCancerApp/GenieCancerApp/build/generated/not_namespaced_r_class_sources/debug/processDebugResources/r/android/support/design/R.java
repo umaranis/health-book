@@ -800,6 +800,7 @@ public final class R {
         public static final int coordinator = 0x7f080047;
         public static final int custom = 0x7f08004a;
         public static final int customPanel = 0x7f08004b;
+<<<<<<< HEAD
         public static final int decor_content_parent = 0x7f08004f;
         public static final int default_activity_button = 0x7f080050;
         public static final int design_bottom_sheet = 0x7f080051;
@@ -907,6 +908,115 @@ public final class R {
         public static final int view_offset_helper = 0x7f08014d;
         public static final int visible = 0x7f08014e;
         public static final int wrap_content = 0x7f080155;
+=======
+        public static final int decor_content_parent = 0x7f08004e;
+        public static final int default_activity_button = 0x7f08004f;
+        public static final int design_bottom_sheet = 0x7f080050;
+        public static final int design_menu_item_action_area = 0x7f080051;
+        public static final int design_menu_item_action_area_stub = 0x7f080052;
+        public static final int design_menu_item_text = 0x7f080053;
+        public static final int design_navigation_view = 0x7f080054;
+        public static final int edit_query = 0x7f08005a;
+        public static final int end = 0x7f08005c;
+        public static final int end_padder = 0x7f08005d;
+        public static final int expand_activities_button = 0x7f080061;
+        public static final int expanded_menu = 0x7f080062;
+        public static final int fill = 0x7f080064;
+        public static final int fixed = 0x7f080067;
+        public static final int forever = 0x7f080072;
+        public static final int ghost_view = 0x7f080073;
+        public static final int home = 0x7f080075;
+        public static final int icon = 0x7f080077;
+        public static final int icon_group = 0x7f080078;
+        public static final int image = 0x7f08007b;
+        public static final int info = 0x7f08007d;
+        public static final int italic = 0x7f08007e;
+        public static final int item_touch_helper_previous_elevation = 0x7f08007f;
+        public static final int largeLabel = 0x7f080081;
+        public static final int left = 0x7f080084;
+        public static final int line1 = 0x7f080086;
+        public static final int line3 = 0x7f080087;
+        public static final int listMode = 0x7f080088;
+        public static final int list_item = 0x7f08008a;
+        public static final int masked = 0x7f08008d;
+        public static final int media_actions = 0x7f08009d;
+        public static final int message = 0x7f0800aa;
+        public static final int mini = 0x7f0800ac;
+        public static final int multiply = 0x7f0800b5;
+        public static final int navigation_header_container = 0x7f0800c1;
+        public static final int none = 0x7f0800c3;
+        public static final int normal = 0x7f0800c4;
+        public static final int notification_background = 0x7f0800c6;
+        public static final int notification_main_column = 0x7f0800c7;
+        public static final int notification_main_column_container = 0x7f0800c8;
+        public static final int parallax = 0x7f0800dd;
+        public static final int parentPanel = 0x7f0800de;
+        public static final int parent_matrix = 0x7f0800df;
+        public static final int pin = 0x7f0800e7;
+        public static final int progress_circular = 0x7f0800e9;
+        public static final int progress_horizontal = 0x7f0800ea;
+        public static final int radio = 0x7f0800eb;
+        public static final int right = 0x7f0800f3;
+        public static final int right_icon = 0x7f0800f4;
+        public static final int right_side = 0x7f0800f5;
+        public static final int save_image_matrix = 0x7f0800f7;
+        public static final int save_non_transition_alpha = 0x7f0800f8;
+        public static final int save_scale_type = 0x7f0800f9;
+        public static final int screen = 0x7f0800fa;
+        public static final int scrollIndicatorDown = 0x7f0800fc;
+        public static final int scrollIndicatorUp = 0x7f0800fd;
+        public static final int scrollView = 0x7f0800fe;
+        public static final int scrollable = 0x7f0800ff;
+        public static final int search_badge = 0x7f080100;
+        public static final int search_bar = 0x7f080101;
+        public static final int search_button = 0x7f080102;
+        public static final int search_close_btn = 0x7f080103;
+        public static final int search_edit_frame = 0x7f080104;
+        public static final int search_go_btn = 0x7f080105;
+        public static final int search_mag_icon = 0x7f080106;
+        public static final int search_plate = 0x7f080107;
+        public static final int search_src_text = 0x7f080108;
+        public static final int search_voice_btn = 0x7f080109;
+        public static final int select_dialog_listview = 0x7f08010a;
+        public static final int shortcut = 0x7f08010b;
+        public static final int smallLabel = 0x7f08010f;
+        public static final int snackbar_action = 0x7f080110;
+        public static final int snackbar_text = 0x7f080111;
+        public static final int spacer = 0x7f080113;
+        public static final int split_action_bar = 0x7f080114;
+        public static final int src_atop = 0x7f080115;
+        public static final int src_in = 0x7f080116;
+        public static final int src_over = 0x7f080117;
+        public static final int start = 0x7f080119;
+        public static final int status_bar_latest_event_content = 0x7f08011a;
+        public static final int submenuarrow = 0x7f08011b;
+        public static final int submit_area = 0x7f08011c;
+        public static final int tabMode = 0x7f08011e;
+        public static final int text = 0x7f080126;
+        public static final int text2 = 0x7f080127;
+        public static final int textSpacerNoButtons = 0x7f080128;
+        public static final int textSpacerNoTitle = 0x7f080129;
+        public static final int text_input_password_toggle = 0x7f080131;
+        public static final int textinput_counter = 0x7f080132;
+        public static final int textinput_error = 0x7f080133;
+        public static final int time = 0x7f080134;
+        public static final int title = 0x7f080135;
+        public static final int titleDividerNoCustom = 0x7f080137;
+        public static final int title_template = 0x7f080138;
+        public static final int top = 0x7f08013b;
+        public static final int topPanel = 0x7f08013c;
+        public static final int touch_outside = 0x7f08013e;
+        public static final int transition_current_scene = 0x7f08013f;
+        public static final int transition_layout_save = 0x7f080140;
+        public static final int transition_position = 0x7f080141;
+        public static final int transition_scene_layoutid_cache = 0x7f080142;
+        public static final int transition_transform = 0x7f080143;
+        public static final int uniform = 0x7f080144;
+        public static final int up = 0x7f080145;
+        public static final int view_offset_helper = 0x7f080147;
+        public static final int visible = 0x7f080148;
+        public static final int wrap_content = 0x7f08014f;
+>>>>>>> master
     }
     public static final class integer {
         private integer() {}
@@ -1021,6 +1131,7 @@ public final class R {
         public static final int abc_shareactionprovider_share_with = 0x7f0d001c;
         public static final int abc_shareactionprovider_share_with_application = 0x7f0d001d;
         public static final int abc_toolbar_collapse_description = 0x7f0d001e;
+<<<<<<< HEAD
         public static final int appbar_scrolling_view_behavior = 0x7f0d003b;
         public static final int bottom_sheet_behavior = 0x7f0d003c;
         public static final int character_counter_pattern = 0x7f0d003d;
@@ -1031,6 +1142,18 @@ public final class R {
         public static final int path_password_strike_through = 0x7f0d0061;
         public static final int search_menu_title = 0x7f0d0069;
         public static final int status_bar_notification_info_overflow = 0x7f0d006a;
+=======
+        public static final int appbar_scrolling_view_behavior = 0x7f0d0035;
+        public static final int bottom_sheet_behavior = 0x7f0d0036;
+        public static final int character_counter_pattern = 0x7f0d0037;
+        public static final int password_toggle_content_description = 0x7f0d0057;
+        public static final int path_password_eye = 0x7f0d0058;
+        public static final int path_password_eye_mask_strike_through = 0x7f0d0059;
+        public static final int path_password_eye_mask_visible = 0x7f0d005a;
+        public static final int path_password_strike_through = 0x7f0d005b;
+        public static final int search_menu_title = 0x7f0d0063;
+        public static final int status_bar_notification_info_overflow = 0x7f0d0064;
+>>>>>>> master
     }
     public static final class style {
         private style() {}

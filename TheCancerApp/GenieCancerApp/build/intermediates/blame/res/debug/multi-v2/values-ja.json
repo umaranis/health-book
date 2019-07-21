@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/home/umar/Downloads/GenieCancerHelpAndroidApp-master/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
+=======
+            "outputFile": "/Users/sadafk/Documents/Hackathon/Hackathon_Android_Version/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
+>>>>>>> master
             "map": [
                 {
                     "source": "/home/umar/.gradle/caches/transforms-2/files-2.1/1871bc547f4920bdf03ed987c3a6e62e/res/values-ja/values.xml",

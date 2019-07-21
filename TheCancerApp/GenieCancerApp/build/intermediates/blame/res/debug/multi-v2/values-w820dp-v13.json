@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/home/umar/Downloads/GenieCancerHelpAndroidApp-master/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
                     "source": "/home/umar/Downloads/GenieCancerHelpAndroidApp-master/TheCancerApp/GenieCancerApp/src/main/res/values-w820dp/dimens.xml",
+=======
+            "outputFile": "/Users/sadafk/Documents/Hackathon/Hackathon_Android_Version/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/sadafk/Documents/Hackathon/Hackathon_Android_Version/TheCancerApp/GenieCancerApp/src/main/res/values-w820dp/dimens.xml",
+>>>>>>> master
                     "from": {
                         "startLines": "4",
                         "startColumns": "4",

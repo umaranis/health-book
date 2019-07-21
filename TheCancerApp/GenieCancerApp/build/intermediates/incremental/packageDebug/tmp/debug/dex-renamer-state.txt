@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #Sun Jul 21 15:37:38 AEST 2019
 path.1=classes.dex
+=======
+#Sat Jul 20 10:54:07 AEST 2019
+base.0=/Users/sadafk/Documents/Hackathon/Hackathon_Android_Version/TheCancerApp/GenieCancerApp/build/intermediates/dex/debug/mergeDexDebug/out
+>>>>>>> master
 path.0=classes.dex
 renamed.10=classes11.dex
 renamed.9=classes10.dex

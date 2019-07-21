@@ -83,6 +83,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
+<<<<<<< HEAD
+=======
+      <excludeFolder url="file://$MODULE_DIR$/build/.DS_Store" />
+>>>>>>> master
       <excludeFolder url="file://$MODULE_DIR$/build/generated/not_namespaced_r_class_sources" />
       <excludeFolder url="file://$MODULE_DIR$/build/generated/source/r" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/annotation_processor_list" />
@@ -131,6 +135,7 @@
     <orderEntry type="library" name="Gradle: com.android.support:transition:26.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-annotations:26.0.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.android.gms:play-services-analytics-impl:10.2.4@aar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:/Users/sadafk/Documents/Hackathon/Hackathon_Android_Version/TheCancerApp/GenieCancerApp/libs/itext5-itextpdf-5.5.11.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-media-compat:26.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7:26.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable:26.0.2@aar" level="project" />

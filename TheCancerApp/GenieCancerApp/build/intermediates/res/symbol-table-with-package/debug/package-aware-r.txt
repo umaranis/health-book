@@ -882,7 +882,12 @@ id always
 id app_generate_transcript_edit
 id app_menu_delete
 id app_menu_edit
+<<<<<<< HEAD
 id app_transcript_edit
+=======
+id app_record_edit
+id app_stop_edit
+>>>>>>> master
 id app_when_edit
 id app_when_time_edit
 id app_where_edit

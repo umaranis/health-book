@@ -157,8 +157,11 @@ public class MedicineEditActivity extends AppCompatActivity{
 
     }
 
+<<<<<<< HEAD
     static final int REQUEST_IMAGE_CAPTURE = 0;
 
+=======
+>>>>>>> master
     private void selectImage() {
         final CharSequence[] options = { "Take Photo", "Choose from Gallery","Cancel" };
 
@@ -172,6 +175,7 @@ public class MedicineEditActivity extends AppCompatActivity{
             public void onClick(DialogInterface dialog, int item) {
 
                 if (options[item].equals("Take Photo")) {
+<<<<<<< HEAD
 
                     //boolean b = context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY);
                     Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -179,6 +183,10 @@ public class MedicineEditActivity extends AppCompatActivity{
                         startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
                     }
 
+=======
+                    /*Intent takePicture = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                    startActivityForResult(takePicture, 0);*/
+>>>>>>> master
 
                 } else if (options[item].equals("Choose from Gallery")) {
                     Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
@@ -685,12 +693,16 @@ public class MedicineEditActivity extends AppCompatActivity{
 
         Log.v(TAG, "In onActivityResult 2");
 
+<<<<<<< HEAD
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             picImageView.setImageBitmap(imageBitmap);
         }
         else if (requestCode == 1 && resultCode == RESULT_OK && null != data) {
+=======
+        if (requestCode == 1 && resultCode == RESULT_OK && null != data) {
+>>>>>>> master
             Log.v(TAG, "In onActivityResult 3");
             Uri selectedImage = data.getData();
             String[] filePathColumn = {MediaStore.Images.Media.DATA};

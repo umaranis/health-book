@@ -113,7 +113,11 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
             @Override
             public void onClick(View view) throws IllegalArgumentException, SecurityException, IllegalStateException {
 
+<<<<<<< HEAD
                 /*MediaPlayer mediaPlayer ;
+=======
+                MediaPlayer mediaPlayer ;
+>>>>>>> master
                 String AudioSavePathInDevice = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + "App" + "AudioRecording.3gp";
 
                 mediaPlayer = new MediaPlayer();
@@ -125,7 +129,11 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
                     e.printStackTrace();
                 }
 
+<<<<<<< HEAD
                 mediaPlayer.start();*/
+=======
+                mediaPlayer.start();
+>>>>>>> master
 
                 //Toast.makeText(MainActivity.this, "Recording Playing", Toast.LENGTH_LONG).show();
 

@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/home/umar/Downloads/GenieCancerHelpAndroidApp-master/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+=======
+            "outputFile": "/Users/sadafk/Documents/Hackathon/Hackathon_Android_Version/TheCancerApp/GenieCancerApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+>>>>>>> master
             "map": [
                 {
                     "source": "/home/umar/.gradle/caches/transforms-2/files-2.1/99bb71ee9480af7a0fb05523ef44f3b9/res/values-v21/values-v21.xml",
@@ -23,7 +27,30 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "/home/umar/Downloads/GenieCancerHelpAndroidApp-master/TheCancerApp/GenieCancerApp/src/main/res/values-v21/styles.xml",
+=======
+                    "source": "/Users/sadafk/.gradle/caches/transforms-2/files-2.1/ed8d74bb59aa34c5a3f6ff1b4cd6186a/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "291,294,298,302",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "21302,21470,21759,22055",
+                        "endLines": "293,296,300,304",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "21465,21628,21922,22217"
+                    }
+                },
+                {
+                    "source": "/Users/sadafk/Documents/Hackathon/Hackathon_Android_Version/TheCancerApp/GenieCancerApp/src/main/res/values-v21/styles.xml",
+>>>>>>> master
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

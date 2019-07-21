@@ -42,11 +42,18 @@
             </TableRow>
         </TableLayout>
 
+<<<<<<< HEAD
+=======
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audio Recording:" />
+>>>>>>> master
         <TableLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical" >
             <TableRow android:paddingTop="5px">
+<<<<<<< HEAD
                 <Button android:id="@+id/app_generate_transcript_edit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -61,6 +68,17 @@
         </TableLayout>
 
 
+=======
+                <Button android:id="@+id/app_record_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button android:id="@+id/app_stop_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+
+>>>>>>> master
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab_add"
             android:layout_width="wrap_content"

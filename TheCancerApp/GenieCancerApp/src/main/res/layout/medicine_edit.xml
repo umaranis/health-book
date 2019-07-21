@@ -54,6 +54,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
+<<<<<<< HEAD
 
                         <TableRow
                             android:gravity="center"
@@ -71,6 +72,22 @@
                                 android:layout_height="wrap_content" />
                         <TableRow>
 
+=======
+                        <TableRow>
+                        <ImageView
+                            android:id="@+id/med_image_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/medicines"
+                            />
+                        </TableRow>
+                            <Button android:id="@+id/med_image_upload"
+                                android:text="Add Image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        <TableRow>
+
+>>>>>>> master
                         </TableRow>
                     </TableLayout>
                 </TableRow>

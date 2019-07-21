@@ -1,4 +1,5 @@
 #Internal package file, do not edit.
+<<<<<<< HEAD
 #Sun Jul 21 15:37:38 AEST 2019
 4.path=classes.dex
 8.set=DEX
@@ -14,6 +15,12 @@
 7.base=/home/umar/Downloads/GenieCancerHelpAndroidApp-master/TheCancerApp/GenieCancerApp/build/intermediates/transforms/dexMerger/debug/20
 9.base=/home/umar/Downloads/GenieCancerHelpAndroidApp-master/TheCancerApp/GenieCancerApp/build/intermediates/transforms/dexMerger/debug/16
 1.baseType=DIRECTORY
+=======
+#Fri Jul 19 17:11:24 AEST 2019
+0.baseType=DIRECTORY
+0.base=/Users/sadafk/Documents/Hackathon/Hackathon_Android_Version/TheCancerApp/GenieCancerApp/build/intermediates/dex/debug/mergeDexDebug/out
+0.path=classes.dex
+>>>>>>> master
 0.set=DEX
 6.baseType=DIRECTORY
 7.set=DEX
