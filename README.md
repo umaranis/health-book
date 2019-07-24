@@ -13,7 +13,7 @@ Health Book is a free and non-profitable app designed to support and empower pat
 * [Contact](#contact)
 
 ## Screenshot
-![Example screenshot](./docs/Screenshot_20190721_Health_Book.jpg)
+<img src="./docs/Screenshot_20190721_Health_Book.jpg" alt="Example screenshot" width="320"/>
 
 ## Technologies
 * Targeted for sdk version 26
@@ -23,8 +23,9 @@ Clone or Download 'Health Book' source code. Use Android Studio to open and comp
 
 ## Features
 List of existing features:
+* Sleep tracker with Fitbit integration
+* Audio transcription using Google API
 * Record personal information
-* Add or remove features from the main menu
 * Keep Contacts
 * Manage Appointments with reminders
 * Manage Medications with reminders
@@ -38,8 +39,6 @@ List of existing features:
 * Useful links
 * Create PDF reports
 * Email reports
-* Sleep tracker with integration with Fitbit
-* Audio transcription using Google API
 
 To-do list:
 * Blood pressure record
