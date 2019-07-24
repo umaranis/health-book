@@ -13,7 +13,7 @@ Health Book is a free and non-profitable app designed to support and empower pat
 * [Contact](#contact)
 
 ## Screenshot
-<img src="./docs/Screenshot_20190721_Health_Book.jpg" alt="Example screenshot" width="320"/>
+<img src="./docs/Screenshot_20190721_Health_Book.jpg" alt="Example screenshot" width="350"/>
 
 ## Technologies
 * Targeted for sdk version 26
@@ -45,6 +45,3 @@ To-do list:
 * Audio dairy
 * Ability to audio record doctor's appointment
 
-
-## Inspiration
-This project was initiated to help patients in their difficult time. Focus of this app is the wellbeing of people dealing with cancer. I would like to thank [@GenieCanHelp](http://www.cybergeniesolutions.com/) team for putting many many hours of volunteer work in this project! 
