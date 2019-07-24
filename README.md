@@ -11,25 +11,25 @@ Health Book is a free and non-profitable app designed to support and empower pat
 * [Contact](#contact)
 
 ## General info
-You can download this app from [@GenieCanHelp](http://geniecanhelpapp.com/) website. 
-This folder contains the source code of GenieCanHelp Android Mobile application. If you want to contribute to this app visit [@Contribution Guide](https://github.com/CyberGenieSolutions/GenieCancerHelpAndroidApp/blob/master/CODE_OF_CONDUCT.md). 
+This app was developed as part of a Hackathon organized by IBM CIC Ballarat in collaboration with GICS (Grampians Integrated Cancer Services) in July 2019. 
 
-## Screenshots
+## Screenshot
 ![Example screenshot](./docs/Screenshot_20190721_Health_Book.jpg)
 
 ## Technologies
 * Targeted for sdk version 26
 
 ## Setup
-Clone or Download GenieCanHelp source code and developers need to open this project in Android Studio.
+Clone or Download 'Health Book' source code. Use Android Studio to open and compile the project.
 
 ## Features
-List of existing features. You can find details of every feature [@Functional Specification document](https://github.com/CyberGenieSolutions/GenieCancerHelpAndroidApp/blob/master/docs/GenieCanHelp_Functional_Specification.pdf)
-* keep personal information
+List of existing features:
+* Record personal information
 * Add or remove features from the main menu
-* keep contacts
+* Keep Contacts
 * Manage Appointments with reminders
 * Manage Medications with reminders
+* Ability to add or capture photo of medicine in medicine record
 * Mood tracker
 * Body temprature record
 * Keep notes
@@ -39,18 +39,14 @@ List of existing features. You can find details of every feature [@Functional Sp
 * Useful links
 * Create PDF reports
 * Email reports
+* Sleep tracker with integration with Fitbit
+* Audio transcription using Google API
 
 To-do list:
-* Sleep tracker
 * Blood pressure record
-* Finding nearest toilets
-* Finding nearest playgrounds
 * Audio dairy
 * Ability to audio record doctor's appointment
-* Ability to add or capture photo of medicine in medicine record
+
 
 ## Inspiration
-This project was initiated to help patients in their difficult time. Focus of this app is the wellbeing of people dealing with cancer. I would like to thank GenieCanHelp team for putting many many hours of volunteer work in this project! 
-
-## Contact
-Created by [@CyberGenieSolutions](http://www.cybergeniesolutions.com/)
+This project was initiated to help patients in their difficult time. Focus of this app is the wellbeing of people dealing with cancer. I would like to thank [@GenieCanHelp](http://www.cybergeniesolutions.com/) team for putting many many hours of volunteer work in this project! 
