@@ -3,15 +3,6 @@ Health Book is a free and non-profitable app designed to support and empower pat
 
 **This app was developed as part of a Hackathon organized by IBM CIC Ballarat in collaboration with GICS (Grampians Integrated Cancer Services) in July 2019.**
 
-## Table of contents
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
-
 ## Screenshot
 <img src="./docs/Screenshot_20190721_Health_Book.jpg" alt="Example screenshot" width="350"/>
 
